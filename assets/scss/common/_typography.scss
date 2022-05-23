@@ -1,0 +1,17 @@
+@import "../presets" as *;
+@import "../mixins/" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $color-gray;
+  font-size: $font-size;
+  font-family: $font-main;
+}
+
+a {
+  text-decoration: none;
+  color: $color-light;
+}
