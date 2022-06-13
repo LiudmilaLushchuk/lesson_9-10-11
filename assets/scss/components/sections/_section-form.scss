@@ -55,11 +55,18 @@
 
       font-size: 1.125rem;
 
+      &::placeholder {
+        color: $color-gray;
+      }
+
       &:hover,
       &:focus {
         border-color: rgba($color-light, 0.15);
         border-bottom-color: $color-light;
         background-color: rgba($color-light, 0.15);
+        &::placeholder {
+          color: #849bab;
+        }
       }
     }
   }

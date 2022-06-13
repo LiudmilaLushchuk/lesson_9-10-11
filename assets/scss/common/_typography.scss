@@ -35,33 +35,37 @@ h1 {
 }
 
 h2 {
+  margin-top: 0;
   letter-spacing: 0.1em;
-
   color: $color-primary;
-
   font-family: $font-header;
   line-height: 1.2em;
 
   @include lg-min {
+    margin-bottom: 3rem;
     font-size: 2.5rem;
   }
   @include lg-md {
+    margin-bottom: 2.625rem;
     font-size: 2rem;
   }
   @include md {
+    margin-bottom: 2.25rem;
     font-size: 1.5rem;
   }
+  @include sm {
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  color: $color-gray;
 }
 
 p {
   color: $color-gray;
-
-  @include lg-min {
-    font-size: 1.125rem;
-  }
-  @include lg {
-    font-size: $font-size;
-  }
 }
 
 a {
@@ -69,3 +73,7 @@ a {
 
   color: $color-light;
 }
+
+// img {
+//   border-style: none;
+// }

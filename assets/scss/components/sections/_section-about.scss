@@ -19,22 +19,22 @@
     padding-bottom: $gap-x3;
   }
 
-  & h2 {
-    margin-top: 0;
+  // & h2 {
+  // margin-top: 0;
 
-    @include lg-min {
-      margin-bottom: 3rem;
-    }
-    @include lg-md {
-      margin-bottom: 2.625rem;
-    }
-    @include md {
-      margin-bottom: 2.25rem;
-    }
-    @include sm {
-      text-align: center;
-    }
-  }
+  // @include lg-min {
+  //   margin-bottom: 3rem;
+  // }
+  // @include lg-md {
+  //   margin-bottom: 2.625rem;
+  // }
+  // @include md {
+  //   margin-bottom: 2.25rem;
+  // }
+  // @include sm {
+  //   text-align: center;
+  // }
+  // }
 
   &__container {
     display: grid;
@@ -58,31 +58,39 @@
   }
 
   &__content {
-    & p:first-of-type {
-      position: relative;
+    & p {
+      @include lg-min {
+        font-size: 1.125rem;
+      }
+      @include lg {
+        font-size: $font-size;
+      }
+      &:first-of-type {
+        position: relative;
 
-      margin-top: -5px;
+        margin-top: -5px;
 
-      &::after {
-        position: absolute;
-        top: 0;
-        right: -50px;
+        &::after {
+          position: absolute;
+          top: 0;
+          right: -50px;
 
-        width: 2px;
-        height: 200px;
+          width: 2px;
+          height: 200px;
 
-        content: "";
+          content: "";
 
-        background-color: rgba($color-gray, 0.1);
+          background-color: rgba($color-gray, 0.1);
 
-        @include lg-md {
-          right: -$gap;
-        }
-        @include md-sm {
-          right: -$gap-sm;
-        }
-        @include sm {
-          display: none;
+          @include lg-md {
+            right: -$gap;
+          }
+          @include md-sm {
+            right: -$gap-sm;
+          }
+          @include sm {
+            display: none;
+          }
         }
       }
     }
